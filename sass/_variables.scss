@@ -795,6 +795,9 @@
 //* For `$screen-lg-min` and up.
 //$container-lg:                 $container-large-desktop;
 
+//Assets
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
 //Custom Colors
 $dark-red:              #6c0000;
 $dull-red:              #963e3e;

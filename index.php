@@ -15,7 +15,7 @@
     </head>
 
     <body>
-    <?php include("php/header.php"); ?>
+<?php include("php/header.php"); ?>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="javascript/bootstrap.min.js"></script>
     </body>

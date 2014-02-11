@@ -3,6 +3,6 @@
 @import "variables";
 @import "bootstrap";
 @import "header";
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
 
+// Needs to be declared after bootstrap variables
 $font-family-base: $font-family-serif;
