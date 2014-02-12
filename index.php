@@ -18,6 +18,6 @@
     <body>
 <?php include("php/header.php"); ?>
         <script src="https://code.jquery.com/jquery.js"></script>
-        <script src="javascript/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     </body>
 </html>

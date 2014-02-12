@@ -9,7 +9,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Compound Muzik</a>
+                    <a class="navbar-brand" href="#" data-toggle="tooltip" title="first tooltip">Compound Muzik</a>
                 </div>
                 <!-- Toggle -->
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">    
