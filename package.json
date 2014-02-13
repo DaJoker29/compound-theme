@@ -1,0 +1,28 @@
+{
+  "name": "compound-muzik-design",
+  "version": "0.0.1",
+  "description": "Compound Muzik Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/DaJoker29/compound-theme.git"
+  },
+  "keywords": [
+    "compoundmuzik"
+  ],
+  "author": "The Captain (Zero Daedalus)",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/compound-theme/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/compound-theme",
+  "devDependencies": {
+    "assemble-less": "~0.7.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

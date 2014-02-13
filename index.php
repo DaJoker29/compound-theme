@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Compound Muzik</title>
         <link rel="icon" href="images/CM-trans.png">
-        <link rel="stylesheet" href="stylesheets/global.css">
+        <link rel="stylesheet" href="css/global.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
