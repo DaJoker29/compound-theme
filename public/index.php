@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Compound Muzik</title>
-        <link rel="icon" href="images/CM-trans.png">
+        <link rel="icon" href="img/CM-trans.png">
         <link rel="stylesheet" href="css/global.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,7 +16,9 @@
     </head>
 
     <body>
+        <!-- Start of Content --> 
 <?php include("../src/php/header.php"); ?>
+        <!-- End of Content -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     </body>
