@@ -3,16 +3,16 @@ module.exports = function(grunt) {
         less: {
             project: {
                 options: {
-                    paths: ['css/less'],
+                    paths: ['src/less'],
                     yuicompress: true
                 },
-                src: ['css/less/global.less'],
-                dest: 'css/global.css'
+                src: ['src/less/global.less'],
+                dest: 'public/css/global.css'
             }
         },
         watch: {
             css: {
-                files: ['css/less/**/*.less'],
+                files: ['src/less/**/*.less'],
                 tasks: ['less']
             }
         }

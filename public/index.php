@@ -16,7 +16,7 @@
     </head>
 
     <body>
-<?php include("php/header.php"); ?>
+<?php include("../src/php/header.php"); ?>
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     </body>
