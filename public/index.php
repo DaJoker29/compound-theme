@@ -21,5 +21,7 @@
         <!-- End of Content -->
         <script src="https://code.jquery.com/jquery.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <!-- Remove before Production -->
+        <script src="//localhost:35729/livereload.js"></script>
     </body>
 </html>

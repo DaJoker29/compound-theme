@@ -1680,7 +1680,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #2b2b2b;
 }
 .form-control {
   display: block;
@@ -1689,7 +1689,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #2b2b2b;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
@@ -3369,7 +3369,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #2b2b2b;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
@@ -3502,7 +3502,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #2b2b2b;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
@@ -4014,7 +4014,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse {
   background-color: #000000;
-  border-color: #963e3e;
+  border-color: #ff2b2b;
 }
 .navbar-inverse .navbar-brand {
   color: #6c0000;
@@ -4069,10 +4069,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: #963e3e;
+    border-color: #ff2b2b;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: #963e3e;
+    background-color: #ff2b2b;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: #6c0000;
@@ -5805,10 +5805,13 @@ button.close {
   font-family: 'Permanent Marker', cursive;
 }
 #nav li {
-  border-color: #ff0000;
+  border-color: #ff2b2b;
   border-style: solid;
   border-width: 0px 0px 0px 1px;
 }
 #nav li:last-child {
   border-right-width: 1px;
+}
+body {
+  background-color: #2b2b2b;
 }
