@@ -15,9 +15,9 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse-1">    
                     <!-- Nav        -->
                     <ul id="nav" class="nav navbar-nav col-md-6">
-                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"> Home</span></a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-user"> Artists</span></a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-music"> Store</span></a></li>
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home">&nbsp;&nbsp;Home</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;Artists</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-music">&nbsp;&nbsp;Store</span></a></li>
                     </ul>
                     <!-- Search     -->
                     <form id="search" class="navbar-form col-md-2 navbar-right" role="search">
