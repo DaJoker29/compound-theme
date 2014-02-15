@@ -16,7 +16,7 @@ module.exports = function(grunt) {
                     data: {
                         debug: false
                     },
-                    pretty: false
+                    pretty: true
                 },
                 files: {
                     "public/index.html": "src/jade/*.jade"
