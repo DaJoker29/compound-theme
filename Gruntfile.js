@@ -6,8 +6,8 @@ module.exports = function(grunt) {
                     paths: ['src/less'],
                     yuicompress: true
                 },
-                src: ['src/less/global.less'],
-                dest: 'public/css/global.css'
+                src: ['src/less/manifest.less'],
+                dest: 'public/css/style.css'
             }
         },
         jade: {
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
                     pretty: true
                 },
                 files: {
-                    "public/index.html": "src/jade/*.jade"
+                    "public/index.html": "src/jade/manifest.jade"
                 }
             }
         },
