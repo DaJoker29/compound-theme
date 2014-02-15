@@ -2076,7 +2076,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #000000;
   background-color: #6c0000;
-  border-color: #963e3e;
+  border-color: #520000;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2085,7 +2085,7 @@ fieldset[disabled] .btn-default.active {
 .open .dropdown-toggle.btn-primary {
   color: #000000;
   background-color: #430000;
-  border-color: #6b2c2c;
+  border-color: #150000;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2108,7 +2108,7 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
   background-color: #6c0000;
-  border-color: #963e3e;
+  border-color: #520000;
 }
 .btn-primary .badge {
   color: #6c0000;
@@ -5776,6 +5776,7 @@ button.close {
 }
 h1 {
   color: #6c0000;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 @font-face {
   font-family: 'creepygirllight';
@@ -5803,6 +5804,7 @@ h1 {
   font-size: 54px;
   margin-top: 15px;
   margin-bottom: -15px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 #nav .glyphicon {
   font-family: 'Permanent Marker', cursive;

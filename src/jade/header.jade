@@ -1,7 +1,7 @@
 //Header
 header(role="navigation")#header.navbar.navbar-inverse.navbar-fixed-top
     //Header Container
-    .container-fluid
+    .fluid-container
         //Masthead
         .navbar-header.col-md-4
             button(type="button" data-toggle="collapse" data-target="#navbar-collapse-1").navbar-toggle
@@ -18,6 +18,4 @@ header(role="navigation")#header.navbar.navbar-inverse.navbar-fixed-top
                 li: a(href="#"): span.glyphicon.glyphicon-user &nbsp;&nbsp;Artists
                 li: a(href="#"): span.glyphicon.glyphicon-music &nbsp;&nbsp;Store
             //Search
-            form#search.navbar-form.col-md-2.navbar-right(role="search")
-                .form-group
-                    button.btn.btn-primary(type="button"): span.glyphicon.glyphicon-search
+            button.btn.navbar-btn.btn-primary(type="button"): span.glyphicon.glyphicon-search
