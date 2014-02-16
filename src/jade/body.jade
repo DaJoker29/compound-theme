@@ -1,11 +1,15 @@
-//Main Container
-section#main.fluid-container
-    //Main Content
-    .row
-        //Body
-        .col-md-8.page-main
-            include article.jade
-        //Sidebar
-        .col-md-3.col-md-offset-1.page-sidebar
-            //Sidebar Header
-            .page-header: h1.text-center News Stream
+// Start of content
+body
+    include header.jade
+    //Primary Content
+    section#main.fluid-container
+        .row
+            //Main
+            .col-md-8.page-main
+                include article.jade
+            //Sidebar
+            .col-md-3.col-md-offset-1.page-sidebar
+                //Sidebar Header
+                .page-header: h1.text-center News Stream
+    include footer.jade
+    include scripts.jade
