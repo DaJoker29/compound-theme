@@ -287,7 +287,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #000000;
+  color: #963e3e;
   text-decoration: underline;
 }
 a:focus {
@@ -2300,7 +2300,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #000000;
+  color: #963e3e;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4155,7 +4155,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-  color: #000000;
+  color: #963e3e;
   background-color: #eeeeee;
   border-color: #dddddd;
 }
@@ -5778,6 +5778,10 @@ h1 {
   color: #6c0000;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 .fluid-container {
   margin-left: 15px;
   margin-right: 15px;
@@ -5816,12 +5820,27 @@ h1 {
 #nav li a:hover {
   background-color: #963e3e;
 }
-.page-header {
+#main {
   margin-top: 50px;
+}
+.page-header {
+  margin-top: 0;
   border: 0;
 }
 .page-main,
 .page-sidebar {
   height: 100%;
   min-height: 1000px;
+}
+article.blog-post {
+  padding-bottom: 20px;
+  border-bottom: #6c0000 solid 1px;
+}
+.article-title {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.article-body {
+  margin-left: 15px;
+  margin-right: 15px;
 }

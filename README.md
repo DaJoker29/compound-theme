@@ -10,9 +10,14 @@ Roadmap
 - [x] Color Scheme
 - [ ] Mockup
 - [x] Header
-- [ ] Body
-- [ ] Body - Main
+- [x] Body
+- [x] Body - Main
 - [ ] Body - Sidebar
+- [x] Article - Blog
+- [ ] Article - Photo
+- [ ] Article - Music
+- [ ] Sidebar - Widget
 - [ ] Footer
-- [ ] Dropdowns and Modals
+- [ ] Popovers and Modals
+- [ ] Collapse Menu
 - [ ] Little Bits
