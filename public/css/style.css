@@ -5778,6 +5778,10 @@ h1 {
   color: #6c0000;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
+.fluid-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 @font-face {
   font-family: 'creepygirllight';
   src: url('../fonts/creepygirl/creel___-webfont.eot');

@@ -2,20 +2,22 @@
 header(role="navigation")#header.navbar.navbar-inverse.navbar-fixed-top
     //Header Container
     .fluid-container
-        //Masthead
-        .navbar-header.col-md-4
-            button(type="button" data-toggle="collapse" data-target="#navbar-collapse-1").navbar-toggle
-                span.sr-only Toggle Navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href="#" data-toggle="tooltip" title="first tooltip") Compound Muzik
-        //Toggle
-        .collapse.navbar-collapse#navbar-collapse-1
-            //Nav
-            ul#nav.nav.navbar-nav.col-md-6
-                li.active: a(href="#"): span.glyphicon.glyphicon-home &nbsp;&nbsp;Home
-                li: a(href="#"): span.glyphicon.glyphicon-user &nbsp;&nbsp;Artists
-                li: a(href="#"): span.glyphicon.glyphicon-music &nbsp;&nbsp;Store
-            //Search
-            button.btn.navbar-btn.btn-primary(type="button"): span.glyphicon.glyphicon-search
+        .row
+            //Masthead
+            .navbar-header.col-md-4
+                button(type="button" data-toggle="collapse" data-target="#navbar-collapse-1").navbar-toggle
+                    span.sr-only Toggle Navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="#" data-toggle="tooltip" title="first tooltip") Compound Muzik
+            //Toggle
+            .collapse.navbar-collapse#navbar-collapse-1
+                //Nav
+                ul#nav.nav.navbar-nav.col-md-6
+                    li.active: a(href="#"): span.glyphicon.glyphicon-home &nbsp;&nbsp;Home
+                    li: a(href="#"): span.glyphicon.glyphicon-user &nbsp;&nbsp;Artists
+                    li: a(href="#"): span.glyphicon.glyphicon-music &nbsp;&nbsp;Store
+                //Search
+                .col-md-2
+                    button.btn.navbar-btn.btn-primary(type="button"): span.glyphicon.glyphicon-search
