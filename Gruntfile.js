@@ -44,11 +44,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('assemble-less');
     grunt.loadNpmTasks('grunt-contrib-jade');
-
-    grunt.task.registerTask('shot', 'Take screenshots of Homepage (large and mobile).', function() {
-	var webshot = require('webshot');
-	webshot('./public/index.html', 'homepage.png', function(err) {});
-    });
-
-    grunt.registerTask('default', ['less', 'jade', 'watch', 'webshot']);
+    grunt.registerTask('default', ['less', 'jade', 'watch']);
 }
