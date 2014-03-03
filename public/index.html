@@ -21,24 +21,24 @@
       <div class="fluid-container">
         <div class="row">
           <!--Masthead-->
-          <div class="navbar-header col-md-10">
+          <div class="navbar-header col-sm-10">
             <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" data-toggle="tooltip" title="first tooltip" class="navbar-brand">Compound Muzik</a>
           </div>
           <!--Toggle-->
           <div id="navbar-collapse-1" class="collapse navbar-collapse">
             <!--Search-->
-            <div class="col-md-2">
+            <div class="col-sm-2">
               <button type="button" class="btn navbar-btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
             </div>
+            <div class="row">
+              <!--Nav-->
+              <ul id="nav" class="nav nav-pills nav-justified">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home">&nbsp;&nbsp;Home</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;Artists</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-music">&nbsp;&nbsp;Store</span></a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <!--Nav-->
-          <ul id="nav" class="nav nav-pills nav-justified">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-home">&nbsp;&nbsp;Home</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;Artists</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-music">&nbsp;&nbsp;Store</span></a></li>
-          </ul>
         </div>
       </div>
     </header>
@@ -69,13 +69,38 @@
           </article>
         </div>
         <!--Sidebar-->
-        <div class="col-md-3 col-md-offset-1 page-sidebar">
+        <div class="col-md-4 page-sidebar">
           <!--Sidebar-->
           <div class="page-header">
-            <h1 class="text-center">News Stream
-              <div class="sidebar-content"></div>
-            </h1>
+            <h1 class="text-center">News Stream</h1>
           </div>
+          <ul class="sidebar-content">
+            <!--Live Feed-->
+            <li class="tweet">
+              <div class="tweet-meta"><a href="#" class="tweet-img"><img src="http://placehold.it/64x64"></a>
+                <div class="tweet-meta-text"><a href="#" class="tweet-author">@TZISCHRIST</a><span class="tweet-time">(12 minutes ago)</span></div>
+              </div>
+              <div class="tweet-content">
+                <p>"All kinds of butts and butts and butts and butts and butts"</p>
+              </div>
+            </li>
+            <li class="tweet">
+              <div class="tweet-meta"><a href="#" class="tweet-img"><img src="http://placehold.it/64x64"></a>
+                <div class="tweet-meta-text"><a href="#" class="tweet-author">@COMPOUND_CEO</a><span class="tweet-time">(2 hours ago)</span></div>
+              </div>
+              <div class="tweet-content">
+                <p>"even more butts and butts and butts"</p>
+              </div>
+            </li>
+            <li class="tweet">
+              <div class="tweet-meta"><a href="#" class="tweet-img"><img src="http://placehold.it/64x64"></a>
+                <div class="tweet-meta-text"><a href="#" class="tweet-author">@Lucid</a><span class="tweet-time">(10 hours ago)</span></div>
+              </div>
+              <div class="tweet-content">
+                <p>"We droppin' butts all day erry day"</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
