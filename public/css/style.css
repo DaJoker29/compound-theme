@@ -5809,8 +5809,7 @@ a:hover {
 }
 .navbar-brand {
   font-family: 'creepygirl';
-  font-size: 54px;
-  margin-top: 15px;
+  font-size: 36px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
 }
 #nav .glyphicon {
