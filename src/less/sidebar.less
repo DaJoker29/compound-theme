@@ -8,18 +8,20 @@
     min-height: 64px;
     padding-bottom: @padding-base-vertical;
     a {
-        padding: 0 @padding-base-horizontal;
         font-size: @font-size-large;
     }
 
     .tweet-meta-text { 
         display: inline-block;
+        padding-left: @padding-base-horizontal;
         vertical-align: center;
         width: 55%; 
     }
 
     .tweet-time { 
-        display: inline-block;
+        display: block;
         font-size: @font-size-base; 
     }
 }
+
+.tweet-content p { padding-left: @padding-base-horizontal; }
