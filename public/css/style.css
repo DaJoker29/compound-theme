@@ -5838,7 +5838,8 @@ a:hover {
   right: 0px;
   position: fixed;
 }
-article.blog-post {
+article.blog-post,
+article.blog-photo {
   padding-bottom: 20px;
   border-bottom: #6c0000 solid 1px;
 }
@@ -5849,6 +5850,11 @@ article.blog-post {
 .article-body {
   margin-left: 15px;
   margin-right: 15px;
+}
+.article-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sidebar-content {
   padding-top: 6px;
