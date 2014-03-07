@@ -5857,9 +5857,6 @@ article.blog-music {
   margin-left: auto;
   margin-right: auto;
 }
-.sidebar-content {
-  padding-top: 6px;
-}
 .tweet {
   line-height: 1.5;
   list-style-type: none;
@@ -5880,6 +5877,9 @@ article.blog-music {
 .tweet-meta .tweet-time {
   display: block;
   font-size: 14px;
+}
+.sidebar-content {
+  padding-top: 6px;
 }
 .tweet-content p {
   padding-left: 12px;
