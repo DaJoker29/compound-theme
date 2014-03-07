@@ -5839,7 +5839,8 @@ a:hover {
   position: fixed;
 }
 article.blog-post,
-article.blog-photo {
+article.blog-photo,
+article.blog-music {
   padding-bottom: 20px;
   border-bottom: #6c0000 solid 1px;
 }
