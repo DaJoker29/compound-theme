@@ -3023,17 +3023,17 @@ input[type="button"].btn-block {
   color: #000000;
 }
 .jumbotron {
-  padding: 30px;
-  margin-bottom: 30px;
+  padding: 0;
+  margin-bottom: 0;
   color: inherit;
-  background-color: #eeeeee;
+  background-color: inherit;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
 }
 .jumbotron p {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   font-size: 21px;
   font-weight: 200;
 }
@@ -3045,12 +3045,12 @@ input[type="button"].btn-block {
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .container .jumbotron {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .jumbotron h1,
   .jumbotron .h1 {
@@ -3396,6 +3396,14 @@ a:hover {
 .page-sidebar {
   right: 0px;
   position: fixed;
+}
+.jumbotron p {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.jumbotron h1 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 article.blog-post,
 article.blog-photo,
