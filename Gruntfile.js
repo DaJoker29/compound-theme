@@ -19,7 +19,8 @@ module.exports = function(grunt) {
                     pretty: true
                 },
                 files: {
-                    "public/index.html": "src/jade/manifest.jade"
+                    "public/index.html": "src/jade/manifest.jade",
+                    "public/artist.html": "src/jade/artist.jade"
                 }
             }
         },
