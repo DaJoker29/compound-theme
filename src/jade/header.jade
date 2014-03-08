@@ -9,12 +9,15 @@ header(role="navigation")#header.navbar.navbar-inverse.navbar-fixed-top
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
-                a.navbar-brand(id="title" href="#" data-toggle="tooltip" rel="tooltip" data-placement="bottom" data-original-title="This is a Tool Tip") Compound Muzik
+                a.navbar-brand(href="#") Compound Muzik
             //Toggle
             .collapse.navbar-collapse#navbar-collapse-1
                 //Search
                 .col-sm-2
-                    button.btn.navbar-btn.btn-primary(type="button"): span.glyphicon.glyphicon-search
+                    form.navbar-form.navbar-right(role="search")
+                        .form-group
+                            input.form-control(type="text" placeholder="Search")
+                        button.btn.navbar-btn.btn-primary(type="button" ): span.glyphicon.glyphicon-search
                 .row
                     //Nav
                     ul#nav.nav.nav-pills.nav-justified

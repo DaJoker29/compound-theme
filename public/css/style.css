@@ -3500,6 +3500,10 @@ a:hover {
 #nav li a:hover {
   background-color: #000000;
 }
+.navbar-form {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #main {
   margin-top: 120px;
 }
