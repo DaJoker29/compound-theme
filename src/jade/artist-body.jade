@@ -1,0 +1,14 @@
+// Start of content
+body
+    include header.jade
+    //Primary Content
+    section#main.fluid-container
+        .row
+            //Main
+            .col-md-8.page-main
+                include artist-main.jade
+            //Sidebar
+            .col-md-4.page-sidebar
+                include sidebar.jade
+    include footer.jade
+    include scripts.jade
