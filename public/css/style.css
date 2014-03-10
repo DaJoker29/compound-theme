@@ -3497,7 +3497,8 @@ a:hover {
   background-color: #2b2b2b;
   border-top: #6c0000 solid 1px;
 }
-#nav li a:hover {
+#nav li a:hover,
+#nav li .selected {
   background-color: #000000;
 }
 .navbar-form {
