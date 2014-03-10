@@ -3528,10 +3528,11 @@ a:hover {
   padding-left: 16px;
   padding-right: 16px;
 }
-article.blog-post,
-article.blog-photo,
-article.blog-music {
-  padding-bottom: 20px;
+.blog-post,
+.blog-photo,
+.blog-music,
+.artist {
+  padding-bottom: 6px;
   border-bottom: #6c0000 solid 1px;
 }
 .article-title {
@@ -3573,4 +3574,16 @@ article.blog-music {
 }
 .tweet-content p {
   padding-left: 12px;
+}
+.artist-link {
+  font-size: 18px;
+}
+.artist {
+  clear: both;
+}
+.artist img {
+  margin: 6px 12px;
+}
+.artist-meta {
+  min-height: 200px;
 }
