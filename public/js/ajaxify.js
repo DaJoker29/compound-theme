@@ -5,14 +5,14 @@ $(document).ready(function() {
     //artist link
     $('#artist').click(function() {
         onlyOneSelected();
-        $('#main').load('artist.html #main > *');    
+        $('#content').load('artist.html #content > *');    
         $('#artist').addClass('selected');
     }); 
 
     //index link
     $('#home').click(function() {
         onlyOneSelected();
-        $('#main').load('index.html #main > *');    
+        $('#content').load('index.html #content > *');    
         $('#home').addClass('selected');
     }); 
 

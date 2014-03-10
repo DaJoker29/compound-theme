@@ -21,9 +21,10 @@
       <div class="fluid-container">
         <div class="row">
           <!--Masthead-->
-          <div class="navbar-header col-sm-10">
+          <div class="navbar-header col-sm-6">
             <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Compound Muzik</a>
           </div>
+          <div class="col-sm-4"></div>
           <!--Toggle-->
           <div id="navbar-collapse-1" class="collapse navbar-collapse">
             <!--Search-->
@@ -51,7 +52,7 @@
     <section id="main" class="fluid-container">
       <div class="row">
         <!--Main-->
-        <div class="col-md-8 page-main">
+        <div id="content" class="col-md-8">
           <div class="jumbotron">
             <h1>Attention:</h1>
             <p>You gotta purrty mouf!</p>
@@ -104,8 +105,13 @@
           </article>
         </div>
         <!--Sidebar-->
-        <div class="col-md-4 page-sidebar">
+        <div id="page-sidebar" class="col-md-4">
           <!--Sidebar-->
+          <audio controls preload="auto" class="center-block">
+            <source src="audio/lazy.mp3" type="audio/mpeg">
+            <embed src="audio/lazy.mp3" width="400" height="50">
+            <p>Use a grown-up browser to listen to this track</p>
+          </audio>
           <div class="page-header">
             <h1 class="text-center">News Stream</h1>
           </div>

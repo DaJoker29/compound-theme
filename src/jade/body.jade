@@ -5,13 +5,13 @@ body
     section#main.fluid-container
         .row
             //Main
-            .col-md-8.page-main
+            #content.col-md-8
                 include feature.jade
                 include article.jade
                 include article-photo.jade
                 include article-music.jade
             //Sidebar
-            .col-md-4.page-sidebar
+            #page-sidebar.col-md-4
                 include sidebar.jade
     include footer.jade
     include scripts.jade
