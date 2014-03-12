@@ -8,6 +8,7 @@ $(document).ready(function() {
     });
 
 
+    /* Uncomment when you install jPlayer Playlist Addon
     var myPlaylist = new jPlayerPlaylist ({
         jPlayer: "#jplayer_jquery_1",
         cssSelectorAncestor: "#jp_container_1"
@@ -23,4 +24,5 @@ $(document).ready(function() {
             autoPlay: true
         }
     });
+    */
 });
