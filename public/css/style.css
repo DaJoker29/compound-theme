@@ -3588,3 +3588,9 @@ a:hover {
 .artist-meta {
   min-height: 200px;
 }
+.store-category .store-product * {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
