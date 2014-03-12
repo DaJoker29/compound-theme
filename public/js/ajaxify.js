@@ -16,6 +16,13 @@ $(document).ready(function() {
         $('#home').addClass('selected');
     }); 
 
+    //store link
+    $('#store').click(function() {
+        onlyOneSelected();
+        $('#content').load('store.html #content > *');    
+        $('#store').addClass('selected');
+    }); 
+
     function onlyOneSelected() {
         $('.selected').removeClass('selected'); 
     }
