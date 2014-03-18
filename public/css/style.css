@@ -3532,7 +3532,8 @@ a:hover {
 .blog-post,
 .blog-photo,
 .blog-music,
-.artist {
+.artist,
+.product {
   padding-bottom: 6px;
   border-bottom: #6c0000 solid 1px;
 }
@@ -3576,16 +3577,20 @@ a:hover {
 .tweet-content p {
   padding-left: 12px;
 }
-.artist-link {
+.artist-link,
+.product-link {
   font-size: 18px;
 }
-.artist {
+.artist,
+.product {
   clear: both;
 }
-.artist img {
+.artist img,
+.product img {
   margin: 6px 12px;
 }
-.artist-meta {
+.artist-meta,
+.product-meta {
   min-height: 200px;
 }
 #store-nav {
@@ -3598,7 +3603,7 @@ a:hover {
 #store-nav ul {
   list-style: none;
   overflow: hidden;
-  padding: 0 0 0 6px;
+  padding: 0 0 0 20px;
 }
 #store-nav li {
   display: inline;
@@ -3608,7 +3613,7 @@ a:hover {
   display: block;
   float: left;
   font-size: 18px;
-  padding: 6px 0;
+  padding: 12px 0;
   text-decoration: none;
   text-align: center;
   width: 29%;
@@ -3663,4 +3668,10 @@ a:hover {
 }
 .apparel #store-nav {
   border-bottom-color: #ff0000;
+}
+#store-content {
+  padding: 6px 12px;
+}
+.product-meta {
+  min-height: 100px !important ;
 }
