@@ -1,7 +1,93 @@
-.store-category {
+#store-nav {
+    background: @gray;
+    border-bottom: 8px solid @dark-red;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
-    .store-product * {
-        .center-block();
+    ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0 0 0 @padding-base-vertical;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        color: @white;
+        display: block;
+        float: left;
+        font-size: @font-size-large;
+        padding: @padding-base-vertical 0;
+        text-decoration: none;
         text-align: center;
+        width: 29%;
+        -webkit-transition: width 0.12s ease;
+        -moz-transition: width 0.12s ease;
+        -o-transition: width 0.12s ease;
+        transition: width 0.12s ease;
+    }
+
+    a:hover {
+        color: @white;
+    }
+
+    a:hover span {
+        border-bottom: 2px solid @white;    
+    }
+
+    .a-all {
+        background: @dark-red;
+        z-index: 100;
+        position: relative;
+    }
+
+    .a-muzik {
+        background: @dull-red;    
+    }
+
+    .a-apparel {
+        background: @red;    
+    }
+
+    li:hover a {
+        width: 40%;    
+    }
+
+    ul:hover .selected {
+        width: 29%;    
+    }
+
+    ul:hover .selected:hover {
+        width: 40%;
+    }
+
+    li a.selected {
+        width: 40%;    
     }
 }
+
+#store-nav:after {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: @white;
+}
+
+.all #store-nav {
+    border-bottom-color: @dark-red;    
+}
+
+.muzik #store-nav {
+    border-bottom-color: @dull-red;    
+}
+
+.apparel #store-nav {
+    border-bottom-color: @red;    
+}
+
