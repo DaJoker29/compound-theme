@@ -3463,7 +3463,9 @@ input[type="button"].btn-block {
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after {
+.navbar-collapse:after,
+#store-nav:before,
+#store-nav:after {
   content: " ";
   display: table;
 }
@@ -3477,7 +3479,8 @@ input[type="button"].btn-block {
 .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after {
+.navbar-collapse:after,
+#store-nav:after {
   clear: both;
 }
 .center-block {
@@ -3768,11 +3771,11 @@ a:hover {
   min-height: 200px;
 }
 #store-nav {
+  margin-left: -15px;
+  margin-right: -15px;
   background: #2b2b2b;
-  border-bottom: 8px solid #6c0000;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 #store-nav ul {
   list-style: none;
@@ -3784,17 +3787,24 @@ a:hover {
 }
 #store-nav a {
   color: #ffffff;
-  display: block;
-  float: left;
   font-size: 18px;
   padding: 12px 0;
   text-decoration: none;
   text-align: center;
-  width: 29%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   -webkit-transition: width 0.12s ease;
   -moz-transition: width 0.12s ease;
   -o-transition: width 0.12s ease;
   transition: width 0.12s ease;
+}
+@media (min-width: 768px) {
+  #store-nav a {
+    float: left;
+    width: 25%;
+  }
 }
 #store-nav a:hover {
   color: #ffffff;
@@ -3804,8 +3814,6 @@ a:hover {
 }
 #store-nav .a-all {
   background: #6c0000;
-  z-index: 100;
-  position: relative;
 }
 #store-nav .a-muzik {
   background: #963e3e;
@@ -3813,32 +3821,59 @@ a:hover {
 #store-nav .a-apparel {
   background: #ff0000;
 }
-#store-nav li:hover a {
-  width: 40%;
+#store-nav a.selected {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-#store-nav ul:hover .selected {
-  width: 29%;
+@media (min-width: 768px) {
+  #store-nav a.selected {
+    float: left;
+    width: 50%;
+  }
 }
-#store-nav ul:hover .selected:hover {
-  width: 40%;
+#store-nav:hover .selected {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-#store-nav li a.selected {
-  width: 40%;
+@media (min-width: 768px) {
+  #store-nav:hover .selected {
+    float: left;
+    width: 25%;
+  }
 }
-#store-nav:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: #ffffff;
+#store-nav a:hover {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.all #store-nav {
-  border-bottom-color: #6c0000;
+@media (min-width: 768px) {
+  #store-nav a:hover {
+    float: left;
+    width: 50%;
+  }
 }
-.muzik #store-nav {
-  border-bottom-color: #963e3e;
+#store-nav:hover .selected:hover {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  #store-nav:hover .selected:hover {
+    float: left;
+    width: 50%;
+  }
+}
+.all {
+  background: #6c0000;
+}
+.muzik {
+  background: #963e3e;
 }
 .apparel #store-nav {
   border-bottom-color: #ff0000;

@@ -1,9 +1,8 @@
 #store-nav {
+    .make-row();
     background: @gray;
-    border-bottom: 8px solid @dark-red;
     overflow: hidden;
     position: relative;
-    width: 100%;
 
     ul {
         list-style: none;
@@ -17,13 +16,11 @@
 
     a {
         color: @white;
-        display: block;
-        float: left;
         font-size: @font-size-large;
         padding: 12px 0;
         text-decoration: none;
         text-align: center;
-        width: 29%;
+        .make-sm-column(3);
         -webkit-transition: width 0.12s ease;
         -moz-transition: width 0.12s ease;
         -o-transition: width 0.12s ease;
@@ -40,8 +37,6 @@
 
     .a-all {
         background: @dark-red;
-        z-index: 100;
-        position: relative;
     }
 
     .a-muzik {
@@ -52,39 +47,29 @@
         background: @red;    
     }
 
-    li:hover a {
-        width: 40%;    
+    a.selected {
+        .make-sm-column(6);
     }
 
-    ul:hover .selected {
-        width: 29%;    
+    &:hover .selected {
+        .make-sm-column(3);
     }
 
-    ul:hover .selected:hover {
-        width: 40%;
+    a:hover {
+        .make-sm-column(6);
     }
 
-    li a.selected {
-        width: 40%;    
+    &:hover .selected:hover {
+        .make-sm-column(6);
     }
 }
 
-#store-nav:after {
-    content: "";
-    position: absolute;
-    left:0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: @white;
+.all {
+    background: @dark-red; 
 }
 
-.all #store-nav {
-    border-bottom-color: @dark-red;    
-}
-
-.muzik #store-nav {
-    border-bottom-color: @dull-red;    
+.muzik {
+    background: @dull-red; 
 }
 
 .apparel #store-nav {
