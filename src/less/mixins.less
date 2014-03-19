@@ -1,3 +1,14 @@
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.75)) {
     text-shadow: @string;
 }
+
+.bottom-border (@padding: @padding-base-vertical, @color: @brand-primary, @style: solid, @width: 1px) {
+    padding-bottom: @padding;
+    padding-top: @padding;
+    border-bottom: @color @style @width;
+}
+
+.side-margins(@margin: auto) {
+    margin-left: @margin;
+    margin-right: @margin;
+}

@@ -3709,13 +3709,6 @@ a:hover {
   padding-left: 16px;
   padding-right: 16px;
 }
-.blog-post,
-.blog-photo,
-.blog-music,
-.artist {
-  padding-bottom: 6px;
-  border-bottom: #6c0000 solid 1px;
-}
 .article-title {
   margin-left: 30px;
   margin-right: 30px;
@@ -3729,32 +3722,8 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.tweet {
-  line-height: 1.5;
-  list-style-type: none;
-}
-.tweet-meta {
-  min-height: 64px;
-  padding-bottom: 6px;
-}
-.tweet-meta a {
-  font-size: 18px;
-}
-.tweet-meta .tweet-meta-text {
-  display: inline-block;
-  padding-left: 12px;
-  vertical-align: center;
-  width: 55%;
-}
-.tweet-meta .tweet-time {
-  display: block;
-  font-size: 14px;
-}
 .sidebar-content {
   padding-top: 6px;
-}
-.tweet-content p {
-  padding-left: 12px;
 }
 .artist-link {
   font-size: 18px;
@@ -3884,6 +3853,43 @@ a:hover {
 .product {
   margin-left: -15px;
   margin-right: -15px;
-  border-bottom: 2px solid #ffffff;
-  padding: 6px 12px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-bottom: #ffffff solid 2px;
+}
+.tweet {
+  line-height: 1.5;
+  list-style-type: none;
+}
+.tweet-meta {
+  min-height: 64px;
+  padding-bottom: 6px;
+}
+.tweet-meta a {
+  font-size: 18px;
+}
+.tweet-meta .tweet-meta-text {
+  display: inline-block;
+  padding-left: 12px;
+  vertical-align: center;
+  width: 55%;
+}
+.tweet-meta .tweet-time {
+  display: block;
+  font-size: 14px;
+}
+.tweet-content p {
+  padding-left: 12px;
+}
+.blog-post,
+.blog-photo,
+.blog-music {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-bottom: #6c0000 solid 1px;
+}
+.artist {
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-bottom: #6c0000 solid 1px;
 }
