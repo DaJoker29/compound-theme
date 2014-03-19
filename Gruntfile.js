@@ -21,7 +21,8 @@ module.exports = function(grunt) {
                 files: {
                     "public/index.html": "src/jade/manifest.jade",
                     "public/artist.html": "src/jade/artist.jade",
-                    "public/store.html": "src/jade/store.jade"
+                    "public/store.html": "src/jade/store.jade",
+                    "public/cart.html": "src/jade/cart.jade"
                 }
             }
         },

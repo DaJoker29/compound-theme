@@ -5,39 +5,41 @@ $(document).ready(function() {
     //Set default selected page to home
     $('#home').addClass('selected');
 
-    //artist link
     $('#artist').click(function() {
         onlyOneSelected();
-        $('#content').load('artist.html #content > *');    
         $('#artist').addClass('selected');
+        $('#content').load('artist.html #content > *');    
     }); 
 
-    //index link
     $('#home').click(function() {
         onlyOneSelected();
-        $('#content').load('index.html #content > *');    
         $('#home').addClass('selected');
+        $('#content').load('index.html #content > *');    
     }); 
 
-    //store link
     $('#store').click(function() {
         onlyOneSelected();
-        $('#content').load('store.html #content > *', function() {
-            //Callback to add default selected for store nav
-            $('#s-all').addClass('selected').click(noFilter);
-            $('#s-muzik').click(addStoreFilter);
-            $('#s-apparel').click(addStoreFilter);
-            $('#s-video').click(addStoreFilter);
-        });    
         $('#store').addClass('selected');
+        $('#content').load('store.html #content > *', linkStore);
+        $('#sidebar').load('cart.html #sidebar > *');    
     }); 
-
-    function onlyOneSelectedStore() {
-        $('.navlinks .selected').removeClass('selected'); 
-    }
 
     function onlyOneSelected() {
         $('.selected').removeClass('selected'); 
+    }
+
+    /*
+     * Store
+     */
+    function linkStore() {
+        $('#s-all').addClass('selected').click(noFilter);
+        $('#s-muzik').click(addStoreFilter);
+        $('#s-apparel').click(addStoreFilter);
+        $('#s-video').click(addStoreFilter);
+    }
+
+    function onlyOneSelectedStore() {
+        $('.navlinks .selected').removeClass('selected'); 
     }
 
     function removeFilters() {
