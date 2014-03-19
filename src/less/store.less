@@ -1,0 +1,88 @@
+#store-nav {
+    .make-row();
+    background: @gray;
+    overflow: hidden;
+    position: relative;
+
+    ul {
+        list-style: none;
+        overflow: hidden;
+        padding: 0 0 0 20px;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        color: @white;
+        font-size: @font-size-large;
+        padding: 12px 0;
+        text-decoration: none;
+        text-align: center;
+        .make-sm-column(3);
+        .make-xs-column(4);
+        -webkit-transition: width 0.12s ease;
+        -moz-transition: width 0.12s ease;
+        -o-transition: width 0.12s ease;
+        transition: width 0.12s ease;
+    }
+
+    a:hover {
+        color: @white;
+    }
+
+    a:hover span {
+        border-bottom: 2px solid @white;    
+    }
+
+    .a-all {
+        background: @dark-red;
+    }
+
+    .a-muzik {
+        background: @dull-red;    
+    }
+
+    .a-apparel {
+        background: @red;    
+    }
+
+    a.selected {
+        .make-sm-column(6);
+    }
+
+    .navlinks:hover .selected {
+        .make-sm-column(3);
+    }
+
+    a:hover {
+        .make-sm-column(6);
+    }
+
+    .navlinks:hover .selected:hover {
+        .make-sm-column(6);
+    }
+}
+
+.all {
+    background: @dark-red; 
+}
+
+.muzik {
+    background: @dull-red; 
+}
+
+.apparel #store-nav {
+    border-bottom-color: @red;    
+}
+
+#store-content {
+    padding: @padding-base-vertical @padding-base-horizontal;
+}
+
+.product {
+    .make-row();
+    border-bottom: 2px solid @white;
+    padding: @padding-base-vertical @padding-base-horizontal;
+}
