@@ -3740,7 +3740,7 @@ a:hover {
 #store-nav {
   margin-left: -15px;
   margin-right: -15px;
-  background: #2b2b2b;
+  background: inherit;
   overflow: hidden;
   position: relative;
 }
@@ -3760,19 +3760,17 @@ a:hover {
   text-align: center;
   position: relative;
   float: left;
-  width: 33.33333333%;
+  width: 25%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
   -webkit-transition: width 0.12s ease;
-  -moz-transition: width 0.12s ease;
-  -o-transition: width 0.12s ease;
   transition: width 0.12s ease;
 }
 @media (min-width: 768px) {
   #store-nav a {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
 }
 #store-nav a:hover {
@@ -3784,20 +3782,27 @@ a:hover {
 #store-nav .a-all {
   background: #6c0000;
 }
+#store-nav .a-video {
+  background: #000000;
+}
 #store-nav .a-muzik {
   background: #963e3e;
 }
 #store-nav .a-apparel {
-  background: #ff0000;
+  background: #ff2b2b;
 }
-#store-nav a.selected {
+#store-nav a.selected,
+#store-nav a:hover,
+#store-nav .navlinks:hover .selected:hover {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  #store-nav a.selected {
+  #store-nav a.selected,
+  #store-nav a:hover,
+  #store-nav .navlinks:hover .selected:hover {
     float: left;
     width: 50%;
   }
@@ -3811,38 +3816,17 @@ a:hover {
 @media (min-width: 768px) {
   #store-nav .navlinks:hover .selected {
     float: left;
-    width: 25%;
+    width: 16.66666667%;
   }
-}
-#store-nav a:hover {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  #store-nav a:hover {
-    float: left;
-    width: 50%;
-  }
-}
-#store-nav .navlinks:hover .selected:hover {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  #store-nav .navlinks:hover .selected:hover {
-    float: left;
-    width: 50%;
-  }
-}
-.all {
-  background: #6c0000;
 }
 .muzik {
   background: #963e3e;
+}
+.apparel {
+  background: #ff2b2b;
+}
+.video {
+  background: #000000;
 }
 .apparel #store-nav {
   border-bottom-color: #ff0000;

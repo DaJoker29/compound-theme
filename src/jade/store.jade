@@ -1,38 +1,63 @@
 #content.col-sm-8
-    #store.muzik
+    #store
         #store-nav
             .navlinks
-                a.a-all(src="#") All
-                a.a-muzik.selected(src="#") Muzik
+                a.a-all.selected(src="#") All
+                a.a-video(src="#") Videos
+                a.a-muzik(src="#") Muzik
                 a.a-apparel(src="#") Apparel
         #store-content
-            .product
+            .product.muzik
                 img(src="http://placehold.it/200x200").col-sm-2
                 .product-meta.col-sm-7
                     a Single #1
                     p [Price]
                     p [Long Description]
                 .btn-group.btn-group-md.col-sm-3
-                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-info-sign
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-headphones
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart
-            .product
+            .product.video
                 img(src="http://placehold.it/200x200").col-sm-2
                 .product-meta.col-sm-7
-                    a Single #1
+                    a Video #1
                     p [Price]
                     p [Long Description]
                 .btn-group.btn-group-md.col-sm-3
-                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-info-sign
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-film
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart
+            .product.apparel
+                img(src="http://placehold.it/200x200").col-sm-2
+                .product-meta.col-sm-7
+                    a T-Shirt #1
+                    p [Price]
+                    p [Long Description]
+                .btn-group.btn-group-md.col-sm-3
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-gift
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart
+            .product.muzik
+                img(src="http://placehold.it/200x200").col-sm-2
+                .product-meta.col-sm-7
+                    a Single #2
+                    p [Price]
+                    p [Long Description]
+                .btn-group.btn-group-md.col-sm-3
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-headphones
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart
-            .product
+            .product.muzik
                 img(src="http://placehold.it/200x200").col-sm-2
                 .product-meta.col-sm-7
-                    a Single #1
+                    a Single #3
                     p [Price]
                     p [Long Description]
                 .btn-group.btn-group-md.col-sm-3
-                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-info-sign
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-headphones
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart
+            .product.apparel
+                img(src="http://placehold.it/200x200").col-sm-2
+                .product-meta.col-sm-7
+                    a T-Shirt #2
+                    p [Price]
+                    p [Long Description]
+                .btn-group.btn-group-md.col-sm-3
+                    button.btn.btn-default(type="button"): span.glyphicon.glyphicon-gift
                     button.btn.btn-default(type="button"): span.glyphicon.glyphicon-shopping-cart

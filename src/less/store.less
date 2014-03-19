@@ -1,6 +1,6 @@
 #store-nav {
     .make-row();
-    background: @gray;
+    background: inherit;
     overflow: hidden;
     position: relative;
 
@@ -20,12 +20,9 @@
         padding: 12px 0;
         text-decoration: none;
         text-align: center;
-        .make-sm-column(3);
-        .make-xs-column(4);
-        -webkit-transition: width 0.12s ease;
-        -moz-transition: width 0.12s ease;
-        -o-transition: width 0.12s ease;
-        transition: width 0.12s ease;
+        .make-sm-column(2);
+        .make-xs-column(3);
+        .transition(width 0.12s ease);
     }
 
     a:hover {
@@ -40,37 +37,39 @@
         background: @dark-red;
     }
 
+    .a-video {
+        background: @black;    
+    }
+
     .a-muzik {
         background: @dull-red;    
     }
 
     .a-apparel {
-        background: @red;    
+        background: @light-red;    
     }
 
-    a.selected {
+    a.selected,
+    a:hover,
+    .navlinks:hover .selected:hover {
         .make-sm-column(6);
     }
 
     .navlinks:hover .selected {
-        .make-sm-column(3);
+        .make-sm-column(2);
     }
-
-    a:hover {
-        .make-sm-column(6);
-    }
-
-    .navlinks:hover .selected:hover {
-        .make-sm-column(6);
-    }
-}
-
-.all {
-    background: @dark-red; 
 }
 
 .muzik {
     background: @dull-red; 
+}
+
+.apparel {
+    background: @light-red;    
+}
+
+.video {
+    background: @black;    
 }
 
 .apparel #store-nav {
