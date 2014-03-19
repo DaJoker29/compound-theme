@@ -3465,7 +3465,9 @@ input[type="button"].btn-block {
 .navbar-collapse:before,
 .navbar-collapse:after,
 #store-nav:before,
-#store-nav:after {
+#store-nav:after,
+.product:before,
+.product:after {
   content: " ";
   display: table;
 }
@@ -3480,7 +3482,8 @@ input[type="button"].btn-block {
 .navbar:after,
 .navbar-header:after,
 .navbar-collapse:after,
-#store-nav:after {
+#store-nav:after,
+.product:after {
   clear: both;
 }
 .center-block {
@@ -3709,8 +3712,7 @@ a:hover {
 .blog-post,
 .blog-photo,
 .blog-music,
-.artist,
-.product {
+.artist {
   padding-bottom: 6px;
   border-bottom: #6c0000 solid 1px;
 }
@@ -3754,20 +3756,16 @@ a:hover {
 .tweet-content p {
   padding-left: 12px;
 }
-.artist-link,
-.product-link {
+.artist-link {
   font-size: 18px;
 }
-.artist,
-.product {
+.artist {
   clear: both;
 }
-.artist img,
-.product img {
+.artist img {
   margin: 6px 12px;
 }
-.artist-meta,
-.product-meta {
+.artist-meta {
   min-height: 200px;
 }
 #store-nav {
@@ -3792,6 +3790,8 @@ a:hover {
   text-decoration: none;
   text-align: center;
   position: relative;
+  float: left;
+  width: 33.33333333%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -3833,14 +3833,14 @@ a:hover {
     width: 50%;
   }
 }
-#store-nav:hover .selected {
+#store-nav .navlinks:hover .selected {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  #store-nav:hover .selected {
+  #store-nav .navlinks:hover .selected {
     float: left;
     width: 25%;
   }
@@ -3857,14 +3857,14 @@ a:hover {
     width: 50%;
   }
 }
-#store-nav:hover .selected:hover {
+#store-nav .navlinks:hover .selected:hover {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  #store-nav:hover .selected:hover {
+  #store-nav .navlinks:hover .selected:hover {
     float: left;
     width: 50%;
   }
@@ -3881,6 +3881,9 @@ a:hover {
 #store-content {
   padding: 6px 12px;
 }
-.product-meta {
-  min-height: 100px !important ;
+.product {
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 2px solid #ffffff;
+  padding: 6px 12px;
 }
