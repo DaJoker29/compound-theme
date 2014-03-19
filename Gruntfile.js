@@ -25,6 +25,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        jadeUsemin: {
+            main: {
+                options: {
+                    uglify: true
+                },
+                files: {
+                    src: ['src/jade/usemin.jade']
+                }
+            } 
+        },
         watch: {
             css: {
                 files: ['src/less/**/*.less'],
@@ -39,6 +49,13 @@ module.exports = function(grunt) {
                 options: {
                     livereload: true
                 }
+            },
+            js: {
+                files: ['src/js/**/*.js'],
+                tasks: ['jadeUsemin'],
+                options: {
+                    livereload: true
+                }
             }
         }
     });
@@ -46,5 +63,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('assemble-less');
     grunt.loadNpmTasks('grunt-contrib-jade');
-    grunt.registerTask('default', ['less', 'jade', 'watch']);
+    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-jade-usemin');
+    grunt.registerTask('default', ['less', 'jade', 'jadeUsemin', 'watch']);
 }
