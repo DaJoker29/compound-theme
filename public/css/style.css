@@ -3779,16 +3779,16 @@ a:hover {
 #store-nav a:hover span {
   border-bottom: 2px solid #ffffff;
 }
-#store-nav .a-all {
+#store-nav #s-all {
   background: #6c0000;
 }
-#store-nav .a-video {
+#store-nav #s-video {
   background: #000000;
 }
-#store-nav .a-muzik {
+#store-nav #s-muzik {
   background: #963e3e;
 }
-#store-nav .a-apparel {
+#store-nav #s-apparel {
   background: #ff2b2b;
 }
 #store-nav a.selected,
