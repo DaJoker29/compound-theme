@@ -24,8 +24,6 @@
     "grunt": "~0.4.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jade": "~0.10.0",
-    "grunt-webshot": "~0.2.0",
-    "webshot": "~0.10.0"
+    "grunt-contrib-jade": "~0.10.0"
   }
 }
