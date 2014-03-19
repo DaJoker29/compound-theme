@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    /*
+     *  Primary Navigation
+     */
     //Set default selected page to home
     $('#home').addClass('selected');
 
@@ -22,9 +25,9 @@ $(document).ready(function() {
         $('#content').load('store.html #content > *', function() {
             //Callback to add default selected for store nav
             $('#s-all').addClass('selected').click(noFilter);
-            $('#s-muzik').click(muzikFilter);
-            $('#s-apparel').click(apparelFilter);
-            $('#s-video').click(videoFilter);
+            $('#s-muzik').click(addStoreFilter);
+            $('#s-apparel').click(addStoreFilter);
+            $('#s-video').click(addStoreFilter);
         });    
         $('#store').addClass('selected');
     }); 
@@ -41,27 +44,15 @@ $(document).ready(function() {
         $('#store-content .product').show();
     }
 
-    function muzikFilter() {
+    function addStoreFilter() {
+        tag = $(this).attr('id');
+        dot = tag.substring(2);
         onlyOneSelectedStore();
         removeFilters();
-        $('#s-muzik').addClass('selected');
-        $('#store-content .product:not(.muzik)').hide();
+        $('#' + tag).addClass('selected');
+        $('#store-content .product:not(.' + dot + ')').hide();
     }
-    
-    function apparelFilter() {
-        onlyOneSelectedStore();
-        removeFilters();
-        $('#s-apparel').addClass('selected');
-        $('#store-content .product:not(.apparel)').hide();
-    }
-    
-    function videoFilter() {
-        onlyOneSelectedStore();
-        removeFilters();
-        $('#s-video').addClass('selected');
-        $('#store-content .product:not(.video)').hide();
-    }
-    
+
     function noFilter() {
         onlyOneSelectedStore();
         $('#s-all').addClass('selected');
