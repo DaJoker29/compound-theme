@@ -1,0 +1,21 @@
+{
+  "name": "compound-muzik-design",
+  "version": "0.0.2",
+  "homepage": "https://github.com/DaJoker29/compound-theme",
+  "authors": [
+    "Dewitt Buckingham <dj729@comcast.net>"
+  ],
+  "description": "Compound Muzik Theme",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
