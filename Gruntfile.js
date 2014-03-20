@@ -40,6 +40,12 @@ module.exports = function(grunt) {
                 }
             } 
         },
+        jshint: {
+            options: {
+                jshintrc: 'jshintrc'
+            },
+            custom: ['src/js/**/*.js'],
+        },
         watch: {
             css: {
                 files: ['src/less/**/*.less'],
@@ -57,7 +63,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['src/js/**/*.js'],
-                tasks: ['jadeUsemin'],
+                tasks: ['jshint', 'jadeUsemin'],
                 options: {
                     livereload: true
                 }
@@ -73,5 +79,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-jade-usemin');
-    grunt.registerTask('default', ['less', 'jade', 'jadeUsemin', 'watch']);
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+
+    grunt.registerTask('default', ['less', 'jade', 'jadeUsemin', 'jshint', 'watch']);
 }

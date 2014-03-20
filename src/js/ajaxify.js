@@ -5,14 +5,14 @@ $(document).ready(function() {
 
     function linkNav() {
         tag = $(this).attr('id');
-        name = tag.substring(4);
+        dot = tag.substring(4);
         onlyOneSelected();
         $(this).addClass('selected');
         if ( tag == 'nav-store')
-            $('#content').load(name + '.html', linkStore);    
+            $('#content').load(dot + '.html', linkStore);    
         else
-            $('#content').load(name + '.html');    
-        $('#sidebar').load(name + '-side.html');    
+            $('#content').load(dot + '.html');    
+        $('#sidebar').load(dot + '-side.html');    
     }
 
     $('#nav-home').addClass('selected');
