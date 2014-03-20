@@ -22,6 +22,10 @@ module.exports = function(grunt) {
                     "public/index.html": "src/jade/manifest.jade",
                     "public/artist.html": "src/jade/artist.jade",
                     "public/store.html": "src/jade/store.jade",
+                    "public/home.html": "src/jade/home.jade",
+                    "public/home-side.html": "src/jade/home-side.jade",
+                    "public/artist-side.html": "src/jade/artist-side.jade",
+                    "public/store-side.html": "src/jade/store-side.jade",
                     "public/cart.html": "src/jade/cart.jade"
                 }
             }

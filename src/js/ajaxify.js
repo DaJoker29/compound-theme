@@ -2,27 +2,23 @@ $(document).ready(function() {
     /*
      *  Primary Navigation
      */
-    //Set default selected page to home
-    $('#home').addClass('selected');
 
-    $('#artist').click(function() {
+    function linkNav() {
+        tag = $(this).attr('id');
+        name = tag.substring(4);
         onlyOneSelected();
-        $('#artist').addClass('selected');
-        $('#content').load('artist.html #content > *');    
-    }); 
+        $(this).addClass('selected');
+        if ( tag == 'nav-store')
+            $('#content').load(name + '.html', linkStore);    
+        else
+            $('#content').load(name + '.html');    
+        $('#sidebar').load(name + '-side.html');    
+    }
 
-    $('#home').click(function() {
-        onlyOneSelected();
-        $('#home').addClass('selected');
-        $('#content').load('index.html #content > *');    
-    }); 
-
-    $('#store').click(function() {
-        onlyOneSelected();
-        $('#store').addClass('selected');
-        $('#content').load('store.html #content > *', linkStore);
-        $('#sidebar').load('cart.html #sidebar > *');    
-    }); 
+    $('#nav-home').addClass('selected');
+    $('#nav-artist').click(linkNav); 
+    $('#nav-home').click(linkNav); 
+    $('#nav-store').click(linkNav); 
 
     function onlyOneSelected() {
         $('.selected').removeClass('selected'); 
