@@ -84,3 +84,41 @@
     .make-row();
     .bottom-border(@color: @white, @width: 2px);
 }
+
+#cart {
+    list-style: none;
+}
+
+#cart-empty {
+    display: none;
+}
+
+#cart-header,
+#cart-footer {
+    .make-row();
+}
+
+.cart-item {
+    .make-row();
+    .bottom-border();
+}
+
+#cart-header h4,
+#cart-footer h4,
+.item-desc {
+    .make-md-column(8);    
+}
+
+#cart-header h5,
+#cart-footer h5,
+.item-price {
+    .make-md-column(4);    
+}
+
+.item-name {
+    .side-padding();
+}
+
+.cart-total {
+    color: @brand-primary;        
+}
