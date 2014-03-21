@@ -1,24 +1,33 @@
 $(document).ready(function() {
-    /*
-     *  Primary Navigation
-     */
 
-    function linkNav() {
-        tag = $(this).attr('id');
-        dot = tag.substring(4);
-        onlyOneSelected();
-        $(this).addClass('selected');
-        if ( tag == 'nav-store')
-            $('#content').load(dot + '.html', linkStore);    
-        else
-            $('#content').load(dot + '.html');    
-        $('#sidebar').load(dot + '-side.html');    
-    }
+    /*
+     * Housing Keeping
+     */
 
     $('#nav-home').addClass('selected');
     $('#nav-artist').click(linkNav); 
     $('#nav-home').click(linkNav); 
     $('#nav-store').click(linkNav); 
+
+    /*
+     *  Primary Navigation
+     */
+    function linkNav() {
+        tag = $(this).attr('id');
+        dot = tag.substring(4);
+        onlyOneSelected();
+        $(this).addClass('selected');
+        $('#content').load(dot + '.html', function() {
+            loadSide(tag, dot);
+        });
+    }
+
+    function loadSide(tag, dot) {
+        if( tag == 'nav-store') 
+            $('#sidebar').load(dot + '-side.html', linkStore); 
+        else
+            $('#sidebar').load(dot + '-side.html');    
+    }
 
     function onlyOneSelected() {
         $('.selected').removeClass('selected'); 
@@ -28,10 +37,12 @@ $(document).ready(function() {
      * Store
      */
     function linkStore() {
+        visibleCart();
         $('#s-all').addClass('selected').click(noFilter);
         $('#s-muzik').click(addStoreFilter);
         $('#s-apparel').click(addStoreFilter);
         $('#s-video').click(addStoreFilter);
+        $('.item-desc .glyphicon-remove').parent().click(removeItem);
     }
 
     function onlyOneSelectedStore() {
@@ -55,5 +66,26 @@ $(document).ready(function() {
         onlyOneSelectedStore();
         $('#s-all').addClass('selected');
         removeFilters();
+    }
+
+    /*
+     * Cart
+     */
+    function removeItem() {
+        $.when($(this).closest('.cart-item').remove())
+            .then(visibleCart);
+    }
+
+    function visibleCart() {
+        if ($('#cart-full').find('.cart-item').length > 0) {
+            $('#cart-empty').hide();
+            $('#cart-full').show();
+            console.log("Cart Active");
+        }
+        else {
+            $('#cart-empty').show();
+            $('#cart-full').hide();
+            console.log("Cart Empty");
+        }
     }
 });

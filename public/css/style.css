@@ -3850,11 +3850,8 @@ a:hover {
   padding-top: 6px;
   border-bottom: #ffffff solid 2px;
 }
-#cart {
+#cart-contents {
   list-style: none;
-}
-#cart-empty {
-  display: none;
 }
 #cart-header,
 #cart-footer {
