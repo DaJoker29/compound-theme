@@ -3901,7 +3901,7 @@ a:hover {
   padding-left: 12px;
   padding-right: 12px;
 }
-.cart-total {
+#cart-total {
   color: #6c0000;
 }
 .tweet {
