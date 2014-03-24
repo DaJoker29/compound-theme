@@ -1,7 +1,7 @@
 Compound Theme
 ==============
 
-Theme for Compound Muzik (will serve as model for upcoming public theme)
+Theme for Compound Muzik 
 
 Roadmap
 =========
