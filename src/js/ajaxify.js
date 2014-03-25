@@ -196,5 +196,16 @@ $(document).ready(function() {
         }
         $('.cart-item .glyphicon-remove').parent().off('click').click(removeItem);
         $('.product .glyphicon-shopping-cart').parent().off('click').click(addItem);
+        $('#guest-checkout').off('click').click(guestSwitch);
+    }
+
+    function guestSwitch() {
+        input = $('#guest-checkout').prop("checked");
+        if (true === input ){
+            $('#create-account').attr('disabled', 'disabled');
+        }
+        else {
+            $('#create-account').removeAttr('disabled');
+        }
     }
 });

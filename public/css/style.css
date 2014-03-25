@@ -2070,7 +2070,7 @@ fieldset[disabled] .btn-default.active {
   background-color: #333333;
 }
 .btn-primary {
-  color: #2b2b2b;
+  color: #ffffff;
   background-color: #6c0000;
   border-color: #520000;
 }
@@ -2079,7 +2079,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #2b2b2b;
+  color: #ffffff;
   background-color: #430000;
   border-color: #150000;
 }
@@ -2108,7 +2108,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-primary .badge {
   color: #6c0000;
-  background-color: #2b2b2b;
+  background-color: #ffffff;
 }
 .btn-success {
   color: #ffffff;
@@ -2193,7 +2193,7 @@ fieldset[disabled] .btn-info.active {
   background-color: #ffffff;
 }
 .btn-warning {
-  color: #ffffff;
+  color: #2b2b2b;
   background-color: #f0ad4e;
   border-color: #eea236;
 }
@@ -2202,7 +2202,7 @@ fieldset[disabled] .btn-info.active {
 .btn-warning:active,
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
-  color: #ffffff;
+  color: #2b2b2b;
   background-color: #ed9c28;
   border-color: #d58512;
 }
@@ -2231,7 +2231,7 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-warning .badge {
   color: #f0ad4e;
-  background-color: #ffffff;
+  background-color: #2b2b2b;
 }
 .btn-danger {
   color: #ffffff;
