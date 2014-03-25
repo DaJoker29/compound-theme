@@ -40,6 +40,7 @@ $(document).ready(function() {
     function linkStore() {
         populateStore(Products);
         visibleCart();
+        guestSwitch();
         $('#s-all').addClass('selected').click(noFilter);
         $('#s-muzik').click(addStoreFilter);
         $('#s-apparel').click(addStoreFilter);
@@ -203,9 +204,11 @@ $(document).ready(function() {
         input = $('#guest-checkout').prop("checked");
         if (true === input ){
             $('#create-account').attr('disabled', 'disabled');
+            $('#guest-info').show();
         }
         else {
             $('#create-account').removeAttr('disabled');
+            $('#guest-info').hide();
         }
     }
 });
