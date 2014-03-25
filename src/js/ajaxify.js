@@ -68,7 +68,7 @@ $(document).ready(function() {
             else if (prodCat == 'video')
                 glyph = 'film'
             else
-                glyph = 'gift'
+                glyph = 'briefcase'
 
         var prodAttr = {
             "data-name": prodName,
@@ -135,20 +135,29 @@ $(document).ready(function() {
 
     function addItem() {
         prod = $(this).closest('.product');
-        prodCat = prod.cat;
-        prodName = prod.name;
-        prodPrice = prod.price;
-        prodDesc = prod.desc;
+        prodCat = prod.attr('data-cat');
+        prodName = prod.attr('data-name');
+        prodDesc = prod.attr('data-desc');
+        prodPrice = prod.attr('data-price');
+
+        if (prodCat == 'muzik')
+            glyph = 'headphones'
+        else if (prodCat == 'video')
+            glyph = 'film'
+        else
+            glyph = 'briefcase'
+
         itemStr = [
            '<li>',
             '<div class="item-desc">',
             '<a><span class="glyphicon glyphicon-remove"></span></a>',
+            '<span class="glyphicon glyphicon-' + glyph + '"></span>',
             '<span class="item-name">',
-            prod.attr('data-name'),
+            prodName,
             '</span>',
             '</div>',
             '<span class="item-price">',
-            prod.attr('data-price'),
+            prodPrice,
             '</span>',
             '</li>' 
         ].join('\n');
