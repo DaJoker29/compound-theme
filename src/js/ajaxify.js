@@ -45,6 +45,7 @@ $(document).ready(function() {
         $('#s-muzik').click(addStoreFilter);
         $('#s-apparel').click(addStoreFilter);
         $('#s-video').click(addStoreFilter);
+        $('.product-link').click(productModal);
     }
 
     var Products = [
@@ -80,7 +81,7 @@ $(document).ready(function() {
             prodStr = [
                 '<img src="http://placehold.it/200x200" class="col-sm-2">',
                 '<div class="product-meta col-sm-7">',
-                '<a>' + prodName + '</a>',
+                '<a class="product-link">' + prodName + '</a>',
                 '<p>' + prodPrice + '</p>',
                 '<p>' + prodDesc + '</p>',
                 '</div>',
@@ -124,6 +125,33 @@ $(document).ready(function() {
         onlyOneSelectedStore();
         $('#s-all').addClass('selected');
         removeFilters();
+    }
+
+    function productModal() {
+        /*
+         * Refactor soon
+         */
+        prod = $(this).closest('.product');
+        prodCat = prod.attr('data-cat');
+        prodName = prod.attr('data-name');
+        prodDesc = prod.attr('data-desc');
+        prodPrice = prod.attr('data-price');
+
+        prodStr = [
+            '<img src="http://placehold.it/200x200">',
+            '<div class="product-meta">',
+            '<p>Price: ' + prodPrice + '</p>',
+            '<p>Description: ' + prodDesc + '</p>',
+            '</div>',
+        ].join('\n');
+
+        $.when($('#productModal')
+            .find('#productLabel')
+            .html(prodName)
+            .closest('#productModal')
+            .find('.modal-body')
+            .html(prodStr))
+            .then($('#productModal').modal());
     }
 
     /*

@@ -4302,3 +4302,6 @@ a:hover {
   padding-top: 6px;
   border-bottom: #6c0000 solid 1px;
 }
+.modal-dialog {
+  color: #ffffff;
+}

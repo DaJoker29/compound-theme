@@ -5,7 +5,22 @@
   </div>
   <div id="store-content"></div>
 </div>
-<div id="account" tabindex="-1" role="dialog" aria-labelledby="accountLabel" aria-hidden="true" class="modal fade">
+<div id="productModal" tabindex="-1" role="dialog" aria-labelledby="productLabel" aria-hidden="true" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+      <h1 id="productLabel" class="modal-title"></h1>
+    </div>
+    <div class="modal-body">
+      <form id="product-info" class="form-horizontal"></form>
+    </div>
+    <div class="modal-footer">
+      <button data-dismiss="modal" class="btn btn-default">Close</button>
+      <button class="btn btn-primary">Add to Cart</button>
+    </div>
+  </div>
+</div>
+<div id="accountModal" tabindex="-1" role="dialog" aria-labelledby="accountLabel" aria-hidden="true" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-header">
       <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
