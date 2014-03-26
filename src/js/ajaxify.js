@@ -40,10 +40,12 @@ $(document).ready(function() {
     function linkStore() {
         populateStore(Products);
         visibleCart();
+        guestSwitch();
         $('#s-all').addClass('selected').click(noFilter);
         $('#s-muzik').click(addStoreFilter);
         $('#s-apparel').click(addStoreFilter);
         $('#s-video').click(addStoreFilter);
+        $('.product-link').click(productModal);
     }
 
     var Products = [
@@ -68,7 +70,7 @@ $(document).ready(function() {
             else if (prodCat == 'video')
                 glyph = 'film'
             else
-                glyph = 'gift'
+                glyph = 'briefcase'
 
         var prodAttr = {
             "data-name": prodName,
@@ -79,7 +81,7 @@ $(document).ready(function() {
             prodStr = [
                 '<img src="http://placehold.it/200x200" class="col-sm-2">',
                 '<div class="product-meta col-sm-7">',
-                '<a>' + prodName + '</a>',
+                '<a class="product-link">' + prodName + '</a>',
                 '<p>' + prodPrice + '</p>',
                 '<p>' + prodDesc + '</p>',
                 '</div>',
@@ -125,6 +127,33 @@ $(document).ready(function() {
         removeFilters();
     }
 
+    function productModal() {
+        /*
+         * Refactor soon
+         */
+        prod = $(this).closest('.product');
+        prodCat = prod.attr('data-cat');
+        prodName = prod.attr('data-name');
+        prodDesc = prod.attr('data-desc');
+        prodPrice = prod.attr('data-price');
+
+        prodStr = [
+            '<img src="http://placehold.it/200x200">',
+            '<div class="product-meta">',
+            '<p>Price: ' + prodPrice + '</p>',
+            '<p>Description: ' + prodDesc + '</p>',
+            '</div>',
+        ].join('\n');
+
+        $.when($('#productModal')
+            .find('#productLabel')
+            .html(prodName)
+            .closest('#productModal')
+            .find('.modal-body')
+            .html(prodStr))
+            .then($('#productModal').modal());
+    }
+
     /*
      * Cart
      */
@@ -135,20 +164,29 @@ $(document).ready(function() {
 
     function addItem() {
         prod = $(this).closest('.product');
-        prodCat = prod.cat;
-        prodName = prod.name;
-        prodPrice = prod.price;
-        prodDesc = prod.desc;
+        prodCat = prod.attr('data-cat');
+        prodName = prod.attr('data-name');
+        prodDesc = prod.attr('data-desc');
+        prodPrice = prod.attr('data-price');
+
+        if (prodCat == 'muzik')
+            glyph = 'headphones'
+        else if (prodCat == 'video')
+            glyph = 'film'
+        else
+            glyph = 'briefcase'
+
         itemStr = [
            '<li>',
             '<div class="item-desc">',
             '<a><span class="glyphicon glyphicon-remove"></span></a>',
+            '<span class="glyphicon glyphicon-' + glyph + '"></span>',
             '<span class="item-name">',
-            prod.attr('data-name'),
+            prodName,
             '</span>',
             '</div>',
             '<span class="item-price">',
-            prod.attr('data-price'),
+            prodPrice,
             '</span>',
             '</li>' 
         ].join('\n');
@@ -187,5 +225,18 @@ $(document).ready(function() {
         }
         $('.cart-item .glyphicon-remove').parent().off('click').click(removeItem);
         $('.product .glyphicon-shopping-cart').parent().off('click').click(addItem);
+        $('#guest-checkout').off('click').click(guestSwitch);
+    }
+
+    function guestSwitch() {
+        input = $('#guest-checkout').prop("checked");
+        if (true === input ){
+            $('#create-account').attr('disabled', 'disabled');
+            $('#guest-info').show();
+        }
+        else {
+            $('#create-account').removeAttr('disabled');
+            $('#guest-info').hide();
+        }
     }
 });

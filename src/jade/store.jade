@@ -6,3 +6,38 @@
             a#s-muzik(src="#") Muzik
             a#s-apparel(src="#") Apparel
     #store-content
+#productModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="productLabel" aria-hidden="true")
+    .modal-dialog
+        .modal-header
+            button.close(type="button" data-dismiss="modal" aria-hidden="true") &times;
+            h1.modal-title#productLabel
+        .modal-body
+            form#product-info.form-horizontal
+        .modal-footer
+            button.btn.btn-default(data-dismiss="modal") Close
+            button.btn.btn-primary Add to Cart
+#accountModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="accountLabel" aria-hidden="true")
+    .modal-dialog
+        .modal-header
+            button.close(type="button" data-dismiss="modal" aria-hidden="true") &times;
+            h1.modal-title#accountLabel Account
+        .modal-body
+            form#account-info.form-horizontal
+                .form-group
+                    label.sr-only Username
+                    input#username.form-control(type="text" placeholder="Username")
+                .form-group
+                    label.sr-only Password
+                    input#password.form-control(type="password" placeholder="Password")
+                .form-group
+                    label.sr-only Email Address
+                    input#email.form-control(type="email" placeholder="Email Address")
+                .form-group
+                    label.sr-only Telephone Number
+                    input#phone.form-control(type="tel" placeholder="Phone Number")
+                .form-group
+                    label.sr-only Shipping Address
+                    textarea#address.form-control(type="text" placeholder="Shipping Address" rows="3")
+        .modal-footer
+            button.btn.btn-default(data-dismiss="modal") Close
+            button.btn.btn-primary Save Changes

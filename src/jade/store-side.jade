@@ -15,3 +15,35 @@ p#cart-empty You have nothing in your cart
         #cart-total
             h4 Total
             h5
+    h1 Checkout
+    .form-group
+        input#guest-checkout(type="checkbox")
+        label Checkout as Guest?
+    .btn-group.btn-group-justified
+        .btn-group
+            button.btn.btn-default#create-account(data-toggle="modal" data-target="#accountModal") Create Account
+        .btn-group
+            button.btn.btn-default Google 
+        .btn-group
+            button.btn.btn-default Paypal 
+        .btn-group
+            button.btn.btn-default Amazon 
+    #guest-info
+        h1 Guest Information
+        form#guest.form-horizontal
+            .form-group
+                label.sr-only Email Address
+                input#email.form-control(type="email" placeholder="Email Address")
+            .form-group
+                label.sr-only Telephone Number
+                input#phone.form-control(type="tel" placeholder="Phone Number")
+            .form-group
+                label.sr-only Shipping Address
+                textarea#address.form-control(type="text" placeholder="Shipping Address" rows="3")
+            .form-group
+                button.btn.btn-primary 
+                    span Save&nbsp;
+                    span.glyphicon.glyphicon-ok
+                button.btn.btn-warning
+                    span Clear&nbsp;
+                    span.glyphicon.glyphicon-remove

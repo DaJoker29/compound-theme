@@ -21,4 +21,44 @@
       <h5></h5>
     </div>
   </div>
+  <h1>Checkout</h1>
+  <div class="form-group">
+    <input id="guest-checkout" type="checkbox"/>
+    <label>Checkout as Guest?</label>
+  </div>
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+      <button id="create-account" data-toggle="modal" data-target="#accountModal" class="btn btn-default">Create Account</button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-default">Google </button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-default">Paypal </button>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-default">Amazon </button>
+    </div>
+  </div>
+  <div id="guest-info">
+    <h1>Guest Information</h1>
+    <form id="guest" class="form-horizontal">
+      <div class="form-group">
+        <label class="sr-only">Email Address</label>
+        <input id="email" type="email" placeholder="Email Address" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label class="sr-only">Telephone Number</label>
+        <input id="phone" type="tel" placeholder="Phone Number" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label class="sr-only">Shipping Address</label>
+        <textarea id="address" type="text" placeholder="Shipping Address" rows="3" class="form-control"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary"><span>Save&nbsp;</span><span class="glyphicon glyphicon-ok"></span></button>
+        <button class="btn btn-warning"><span>Clear&nbsp;</span><span class="glyphicon glyphicon-remove"></span></button>
+      </div>
+    </form>
+  </div>
 </div>
