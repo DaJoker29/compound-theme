@@ -7,30 +7,35 @@
 @black:                 #000000;
 @gray:                  #2b2b2b;
 @white:                 #ffffff;
+@cream:                 #e8d999;
+@theme-red:             #830a2c;
+@theme-blue:            #155c9a;
+@theme-bright-red:      #cc0a2c;
+@theme-gray:            #717c70;
 
 //Typography
 @font-family-base:      'Permanent Marker', cursive;
 
 //Brand colors
-@brand-primary:         @dark-red;
+@brand-primary:         @theme-red;
 @brand-success:         #5cb85c;
-@brand-info:            @light-red;
+@brand-info:            @theme-bright-red;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
 //Body Colors
-@body-bg:               @black;
-@text-color:            @gray;
-@link-color:            @dark-red;
-@link-hover-color:      @dull-red;
+@body-bg:               url('../img/texture.png') repeat;
+@text-color:            @cream;
+@link-color:            @theme-red;
+@link-hover-color:      @theme-bright-red;
 
 //Navbar Colors
-@navbar-inverse-bg:                 @black;
-@navbar-inverse-link-active-bg:     @dark-red;
-@navbar-inverse-border:             @black;
-@navbar-inverse-link-color:         @dark-red;
-@navbar-inverse-link-hover-color:   @black;
-@navbar-inverse-brand-hover-color:  @dull-red;
+@navbar-inverse-bg:                 @theme-blue;
+@navbar-inverse-link-active-bg:     @theme-red;
+@navbar-inverse-border:             @theme-blue;
+@navbar-inverse-link-color:         @theme-bright-red;
+@navbar-inverse-link-hover-color:   @theme-blue;
+@navbar-inverse-brand-hover-color:  @theme-red;
 
 //Pills
 @nav-pills-border-radius:   0;
@@ -39,14 +44,14 @@
 @component-active-bg:   transparent;
 
 //Forms
-@input-border-focus:    @dark-red;
+@input-border-focus:    @theme-red;
 
 //Buttons
-@btn-primary-color:     @white;
+@btn-primary-color:     @theme-gray;
 @btn-warning-color:     @text-color;
 
 //Misc
-@hr-border:             @dull-red;
+@hr-border:             @theme-bright-red;
 
 //Jumbotron
 @jumbotron-bg:          inherit;
