@@ -23,9 +23,25 @@
         <div class="row">
           <!--Masthead-->
           <div class="navbar-header col-sm-6">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Compound Muzik</a>
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">Compound&nbsp;<span class="reverse">Muzik</span></a>
           </div>
-          <div class="col-sm-4"></div>
+          <!--jPlayer-->
+          <div id="jPlayer-container" class="col-sm-4 pull-left btn-toolbar">
+            <div id="playerControls" class="btn-group">
+              <button id="prev" class="glyphicon glyphicon-backward navbar-btn btn-info btn"></button>
+              <button id="pausePlay" class="glyphicon glyphicon-play navbar-btn btn btn-info"></button>
+              <button id="next" class="glyphicon glyphicon-forward navbar-btn btn btn-info"></button>
+            </div>
+            <div id="playerMeta" class="btn-group">
+              <button id="current" class="navbar-btn btn btn-info">&nbsp;&nbsp;Butts (0:31 - 3.27)</button>
+              <button id="playlist" data-toggle="dropdown" class="navbar-btn btn dropdown-toggle btn-info"><span class="glyphicon glyphicon-list"></span><span class="sr-only">Toggle Playlist Dropdown</span></button>
+              <ul role="menu" class="dropdown-menu">
+                <li><a class="track">Song x</a></li>
+                <li><a class="track">Song x</a></li>
+                <li><a class="track">Song x</a></li>
+              </ul>
+            </div>
+          </div>
           <!--Toggle-->
           <div id="navbar-collapse-1" class="collapse navbar-collapse">
             <!--Search-->

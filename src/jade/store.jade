@@ -14,8 +14,12 @@
         .modal-body
             form#product-info.form-horizontal
         .modal-footer
-            button.btn.btn-default(data-dismiss="modal") Close
-            button.btn.btn-primary Add to Cart
+            button.btn.btn-primary 
+                span Add to Cart&nbsp;
+                span.glyphicon.glyphicon-shopping-cart
+            button.btn.btn-warning(data-dismiss="modal") 
+                span Close&nbsp;
+                span.glyphicon.glyphicon-remove
 #accountModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="accountLabel" aria-hidden="true")
     .modal-dialog
         .modal-header
@@ -39,5 +43,9 @@
                     label.sr-only Shipping Address
                     textarea#address.form-control(type="text" placeholder="Shipping Address" rows="3")
         .modal-footer
-            button.btn.btn-default(data-dismiss="modal") Close
-            button.btn.btn-primary Save Changes
+            button.btn.btn-primary 
+                span Save&nbsp;
+                span.glyphicon.glyphicon-ok
+            button.btn.btn-warning(data-dismiss="modal") 
+                span Close&nbsp;
+                span.glyphicon.glyphicon-remove
